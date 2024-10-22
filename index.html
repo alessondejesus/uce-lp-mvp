@@ -35,7 +35,7 @@
             </div>
             <div class="h-full bg-blue-600 w-2/5">
                 <div class="h-20 w-full flex items-center pr-10">
-                    <div class="ml-20 w-full flex justify-between text-white">
+                    <div class="ml-20 w-full hidden md:flex justify-between text-white">
                         <a href="#"
                             class="underline underline-offset-8 decoration-transparent transition-all duration-300 hover:decoration-white">
                             Sobre
@@ -63,8 +63,8 @@
         <i class="absolute top-2/4 left-10 fa-solid text-4xl fa-star text-red-500 opacity-40"></i>
         <i class="absolute top-1/4 left-28 fa-solid text-3xl fa-star text-red-500 opacity-40"></i>
         <div class="h-full flex">
-            <div class="w-3/5 flex justify-center pt-36 pb-10">
-                <div class="w-2/4">
+            <div class="w-ful lg:w-3/5 flex justify-center pt-36 pb-10">
+                <div class="w-4/5 lg:w-2/4">
                     <h1 class="text-9xl text-left font-bold">
                         Inglês sem limites
                     </h1>
@@ -78,9 +78,9 @@
                     </a>
                 </div>
             </div>
-            <div class="w-2/5 bg-blue-600 flex flex-col justify-end pr-24 items-end">
-                <img class="size-30 absolute w-2/4 mr-10" src="assets/images/student-nav-image.png"
-                    alt="Logo UCE Idiomas">
+            <div class="lg:w-2/5 bg-blue-600 hidden lg:flex flex-col justify-end pr-24 items-end">
+                <img class="hidden size-30 xl:block xl:absolute w-2/4 2xl:w-1/4 mr-10"
+                    src="assets/images/student-nav-image.png" alt="Logo UCE Idiomas">
                 <i class="absolute ml-1/4 mr-20 top-1/2 fa-solid text-xl fa-circle text-white opacity-40"></i>
                 <i class="absolute right-24 top-44 fa-solid text-5xl fa-square text-white opacity-40"></i>
                 <i class="absolute top-1/4 right-10 fa-solid text-5xl fa-star text-white opacity-40"></i>
@@ -116,8 +116,8 @@
                                 class="w-full lg:w-[300px] text-gray-800 bg-white py-3.5 px-4 text-base border border-[#ddd] border-r-0 rounded-l-lg outline-none focus:border-blue-200"
                                 required />
                             <button type="submit"
-                                class="bg-blue-600 hover:bg-blue-700 text-white text-base font-semibold tracking-wide py-3.5 px-6 border border-blue-600 rounded-r-lg outline-none">
-                                Increver-se
+                                class="bg-blue-600 hover:bg-blue-700 text-white whitespace-nowrap text-base font-semibold tracking-wide py-3.5 px-6 border border-blue-600 rounded-r-lg outline-none">
+                                Inscrever-se
                             </button>
                         </form>
                         <small class="text-gray-500 hover:text-blue-400 transition-all cursor-pointer duration-300"><a
@@ -129,12 +129,12 @@
             </div>
         </section>
         <section>
-            <div class="w-full flex items-center justify-center">
+            <div class="w-full flex items-center justify-center pt-16 lg:pt-0">
                 <div class="block w-full h-0.5 max-w-lg bg-purple-100 rounded-full mb-16">
                 </div>
             </div>
             <div class="w-full h-96 relative px-20 flex items-center justify-center">
-                <div class="absolute w-1/2 h-full p-10 pl-20 z-10 bg-white rounded-md shadow-2xl">
+                <div class="absolute w-3/4 lg:w-1/2 h-full p-10 pl-20 z-10 bg-white rounded-md shadow-2xl">
                     <div class="h-96">
                         <h6 class="flex items-center justify-center flex-col">
                             <span class="text font-bold tracking-widest text-blue-600 uppercase">
@@ -159,7 +159,7 @@
                     </div>
                 </div>
                 <div
-                    class="absolute w-1/2 h-full bg-blue-600 ml-60 mt-24 rounded-md shadow-2xl flex items-end justify-center">
+                    class="absolute w-3/4 lg:w-1/2 h-full bg-blue-600 ml-60 mt-24 rounded-md shadow-2xl flex items-end justify-center">
                 </div>
             </div>
         </section>
@@ -188,7 +188,7 @@
                             this.activeAccordion = (this.activeAccordion == id) ? '' : id 
                         } 
                     }"
-                        class="relative w-4/5 mx-auto overflow-hidden mt-10 font-normal border border-gray-200 divide-y divide-gray-200 rounded-md">
+                        class="relative w-full xl:w-4/5 mx-auto overflow-hidden mt-10 font-normal border border-gray-200 divide-y divide-gray-200 rounded-md">
                         <div x-data="{ id: $id('accordion') }" class="cursor-pointer group">
                             <button @click="setActiveAccordion(id)"
                                 class="flex items-center justify-between w-full p-4 text-left select-none group-hover:underline">
