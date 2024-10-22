@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,container-queries"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <title>UCE Idioma - Venha conhecer um novo idioma</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="w-full flex">
+            <div class="h-full w-3/5">
+                <div class="h-20 w-full flex items-center">
+                    <div class="w-2/5 pl-20 pt-2">
+                        <img class="size-20" src="assets/images/uce_idiomas_logo.jpg" alt="Logo UCE Idiomas">
+                    </div>
+                    <div class="text-blue-800 font-bold">
+                        <a class="underline underline-offset-8 decoration-transparent transition-all duration-300 hover:decoration-blue-500"
+                            href="https://wa.me/5571993150288" target="_blank">(71) 99315-0288</a>
+                    </div>
+                </div>
+            </div>
+            <div class="h-full bg-blue-600 w-2/5">
+                <div class="h-20 w-full flex items-center pr-10">
+                    <div class="ml-20 w-full flex justify-between text-white">
+                        <a href="#"
+                            class="underline underline-offset-8 decoration-transparent transition-all duration-300 hover:decoration-white">
+                            Sobre
+                        </a>
+                        <a href="#contact"
+                            class="underline underline-offset-8 decoration-transparent transition-all duration-300 hover:decoration-white">
+                            Contato
+                        </a>
+                        <a href="#"
+                            class="underline underline-offset-8 decoration-transparent transition-all duration-300 hover:decoration-white">
+                            Cursos
+                        </a>
+                        <a href="#feedback"
+                            class="underline underline-offset-8 decoration-transparent transition-all duration-300 hover:decoration-white">
+                            Feedback
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <i class="absolute left-1/2 mr-20 top-24 fa-solid text-xl fa-circle text-red-500 opacity-40"></i>
+        <i class="absolute left-1/2 top-80 fa-solid text-5xl fa-square text-red-500 opacity-40"></i>
+        <i class="absolute top-2/4 left-10 fa-solid text-4xl fa-star text-red-500 opacity-40"></i>
+        <i class="absolute top-1/4 left-28 fa-solid text-3xl fa-star text-red-500 opacity-40"></i>
+        <div class="h-full flex">
+            <div class="w-3/5 flex justify-center pt-36 pb-10">
+                <div class="w-2/4">
+                    <h1 class="text-9xl text-left font-bold">
+                        Inglês sem limites
+                    </h1>
+                    <h5 class="text-xl mt-5 text-gray-600 font-semibold">
+                        Aulas presenciais e online a partir de <br>R$ 250,00
+                    </h5>
+                    <a href="https://wa.me/5571993150288" target="_blank"
+                        class="bg-red-500 hover:bg-red-700 hover:-translate-y-1 duration-300 font-bold mt-5 py-3 px-7 text-white rounded-full inline-flex items-center">
+                        <span class="animate-ping inline-flex h-3 w-3 rounded-full bg-red-200 opacity-75 mr-2"></span>
+                        Entrar em contato
+                    </a>
+                </div>
+            </div>
+            <div class="w-2/5 bg-blue-600 flex flex-col justify-end pr-24 items-end">
+                <img class="size-30 absolute w-2/4 mr-10" src="assets/images/student-nav-image.png"
+                    alt="Logo UCE Idiomas">
+                <i class="absolute ml-1/4 mr-20 top-1/2 fa-solid text-xl fa-circle text-white opacity-40"></i>
+                <i class="absolute right-24 top-44 fa-solid text-5xl fa-square text-white opacity-40"></i>
+                <i class="absolute top-1/4 right-10 fa-solid text-5xl fa-star text-white opacity-40"></i>
+                <a href="https://wa.me/5571993150288" target="_blank" rel="noopener noreferrer">
+                    <span class="animate-ping inline-flex h-2 w-2 rounded-full bg-sky-400 opacity-75"></span>
+                    <i
+                        class="fa-brands fa-whatsapp text-5xl hover:-translate-y-1 duration-300 hover:scale-110 text-white hover:opacity-60 cursor-pointer transition ease-in-out delay-1"></i>
+                </a>
+                <a href="https://wa.me/5571993150288" target="_blank" rel="noopener noreferrer">
+                    <i
+                        class="fa-brands fa-instagram text-5xl hover:-translate-y-1 duration-300 hover:scale-110 text-white pt-5 pb-20 hover:opacity-60 cursor-pointer transition ease-in-out delay-1"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="w-full">
+            <i onclick="window.scrollBy(0, 500)"
+                class="cursor-pointer ml-20 text-4xl fa-solid fa-angles-down text-blue-500 animate-bounce"></i>
+        </div>
+        <section>
+            <div class="h-60 w-full mt-16">
+                <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 p-4">
+                    <div class="w-full text-center lg:text-left">
+                        <h2 class="text-gray-800 text-4xl font-semibold mb-6">Fique atualizado(a)</h2>
+                        <p class="text-lg text-gray-600">Inscreva-se em nossa newsletter para receber as últimas
+                            atualizações, dicas e ofertas exclusivas.</p>
+                    </div>
+                    <div class="w-full max-lg:max-w-lg">
+                        <form class="flex items-center">
+                            <input type="email" placeholder="Digite seu email e receba novidades" name="email"
+                                autocomplete="email"
+                                class="w-full lg:w-[300px] text-gray-800 bg-white py-3.5 px-4 text-base border border-[#ddd] border-r-0 rounded-l-lg outline-none focus:border-blue-200"
+                                required />
+                            <button type="submit"
+                                class="bg-blue-600 hover:bg-blue-700 text-white text-base font-semibold tracking-wide py-3.5 px-6 border border-blue-600 rounded-r-lg outline-none">
+                                Increver-se
+                            </button>
+                        </form>
+                        <small class="text-gray-500 hover:text-blue-400 transition-all cursor-pointer duration-300"><a
+                                href="mailto:ontato@uceidiomas.com?subject=Vim pelo site&body=Vim pelo site"></a> ou
+                            envie
+                            um e-mail para contato@uceidiomas.com</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="w-full flex items-center justify-center">
+                <div class="block w-full h-0.5 max-w-lg bg-purple-100 rounded-full mb-16">
+                </div>
+            </div>
+            <div class="w-full h-96 relative px-20 flex items-center justify-center">
+                <div class="absolute w-1/2 h-full p-10 pl-20 z-10 bg-white rounded-md shadow-2xl">
+                    <div class="h-96">
+                        <h6 class="flex items-center justify-center flex-col">
+                            <span class="text font-bold tracking-widest text-blue-600 uppercase">
+                                Nosso</span>
+                            <span class="max-w-3xl text-4xl font-bold">
+                                Endereço
+                            </span>
+                        </h6>
+                        <div class="block w-1/3 h-0.5 mt-10 bg-purple-100 rounded-full">
+                        </div>
+                        <ul class="list-disc mt-4 text-xl font-semibold space-y-3">
+                            <li>São Cristóvão, Salvador - Salvador Norte Shopping</li>
+                            <li>(71) 99315-0288</li>
+                            <li>contato@uceidiomas.com</li>
+                        </ul>
+                        <a href="https://wa.me/5571993150288" target="_blank"
+                            class="bg-red-500 hover:bg-red-700 hover:-translate-y-1 duration-300 font-bold mt-5 py-3 px-7 text-white rounded-full inline-flex items-center">
+                            <span
+                                class="animate-ping inline-flex h-3 w-3 rounded-full bg-red-200 opacity-75 mr-2"></span>
+                            Conversar pelo Whatsapp
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="absolute w-1/2 h-full bg-blue-600 ml-60 mt-24 rounded-md shadow-2xl flex items-end justify-center">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="faq" class="py-20 mt-20 px-20 w-full relative pb-48">
+                <img src="/assets/images/student-illustration-1.jpg" class="absolute w-60 top-0 right-0 opacity-60">
+                <img src="/assets/images/student-illustration-2.jpg" class="absolute w-60 bottom-0 left-1 opacity-60">
+                <i class="absolute left-20 fa-solid text-5xl fa-circle text-red-500 opacity-30"></i>
+                <i class="absolute left-1/4 top-2 fa-solid text-5xl fa-star text-red-500 opacity-30"></i>
+                <i class="absolute right-10 top-80 fa-solid text-5xl fa-square text-red-500 opacity-30"></i>
+                <i class="absolute right-20 bottom-2 fa-solid text-6xl fa-square text-red-500 opacity-30"></i>
+                <i class="absolute top-2/4 left-10 fa-solid text-4xl fa-star text-red-500 opacity-30"></i>
+                <i class="absolute top-1/4 left-28 fa-solid text-3xl fa-star text-red-500 opacity-30"></i>
+                <div class="flex items-center justify-center flex-col">
+                    <p
+                        class="flex items-start justify-start text-lg font-bold tracking-widest text-blue-600 uppercase lg:justify-center lg:items-center">
+                        Dúvidas?</p>
+                    <h4 class="flex items-start justify-start max-w-3xl text-5xl font-bold lg:justify-center">
+                        Perguntas frequentes
+                    </h4>
+                </div>
+                <div class="flex items-center justify-center">
+                    <div x-data="{ 
+                        activeAccordion: '', 
+                        setActiveAccordion(id) { 
+                            this.activeAccordion = (this.activeAccordion == id) ? '' : id 
+                        } 
+                    }"
+                        class="relative w-4/5 mx-auto overflow-hidden mt-10 font-normal border border-gray-200 divide-y divide-gray-200 rounded-md">
+                        <div x-data="{ id: $id('accordion') }" class="cursor-pointer group">
+                            <button @click="setActiveAccordion(id)"
+                                class="flex items-center justify-between w-full p-4 text-left select-none group-hover:underline">
+                                <strong>Quais são os níveis de proficiência oferecidos nas aulas de inglês?</strong>
+                                <svg class="w-4 h-4 duration-200 ease-out"
+                                    :class="{ 'rotate-180': activeAccordion==id }" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion==id" x-collapse x-cloak>
+                                <div class="p-4 pt-0 opacity-70">
+                                    Oferecemos cursos para todos os níveis, desde iniciantes até avançados. Cada nível é
+                                    projetado para atender às necessidades específicas dos alunos, garantindo um
+                                    aprendizado
+                                    progressivo.
+                                </div>
+                            </div>
+                        </div>
+                        <div x-data="{ id: $id('accordion') }" class="cursor-pointer group">
+                            <button @click="setActiveAccordion(id)"
+                                class="flex items-center justify-between w-full p-4 text-left select-none group-hover:underline">
+                                <strong>Qual é a duração das aulas e a frequência?</strong>
+                                <svg class="w-4 h-4 duration-200 ease-out"
+                                    :class="{ 'rotate-180': activeAccordion==id }" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion==id" x-collapse x-cloak>
+                                <div class="p-4 pt-0 opacity-70">
+                                    As aulas têm duração de 120 minutos e são oferecidas uma vez por semana, presencial
+                                    ou online.
+                                </div>
+                            </div>
+                        </div>
+                        <div x-data="{ id: $id('accordion') }" class="cursor-pointer group">
+                            <button @click="setActiveAccordion(id)"
+                                class="flex items-center justify-between w-full p-4 text-left select-none group-hover:underline">
+                                <strong>Os professores são fluentes em inglês?</strong>
+                                <svg class="w-4 h-4 duration-200 ease-out"
+                                    :class="{ 'rotate-180': activeAccordion==id }" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion==id" x-collapse x-cloak>
+                                <div class="p-4 pt-0 opacity-70">
+                                    Sim, todos os nossos professores são altamente qualificados e possuem fluência em
+                                    inglês. Eles têm experiência em ensinar e formação em ensino de idiomas, garantindo
+                                    um
+                                    aprendizado eficaz.
+                                </div>
+                            </div>
+                        </div>
+                        <div x-data="{ id: $id('accordion') }" class="cursor-pointer group">
+                            <button @click="setActiveAccordion(id)"
+                                class="flex items-center justify-between w-full p-4 text-left select-none group-hover:underline">
+                                <strong>Há materiais didáticos inclusos nas aulas?</strong>
+                                <svg class="w-4 h-4 duration-200 ease-out"
+                                    :class="{ 'rotate-180': activeAccordion==id }" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion==id" x-collapse x-cloak>
+                                <div class="p-4 pt-0 opacity-70">
+                                    Sim, todos os materiais didáticos estão incluídos no curso. Fornecemos livros,
+                                    exercícios online e recursos audiovisuais para complementar o aprendizado e tornar
+                                    as
+                                    aulas mais interativas.
+                                </div>
+                            </div>
+                        </div>
+                        <div x-data="{ id: $id('accordion') }" class="cursor-pointer group">
+                            <button @click="setActiveAccordion(id)"
+                                class="flex items-center justify-between w-full p-4 text-left select-none group-hover:underline">
+                                <strong>A escola oferece oportunidades de intercâmbio?</strong>
+                                <svg class="w-4 h-4 duration-200 ease-out"
+                                    :class="{ 'rotate-180': activeAccordion==id }" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion==id" x-collapse x-cloak>
+                                <div class="p-4 pt-0 opacity-70">
+                                    Sim, realizamos uma viagem de intercâmbio uma vez por ano, com duração de 7 dias
+                                    para o
+                                    exterior. Essa experiência permite que os alunos pratiquem o inglês em um ambiente
+                                    imersivo, além de conhecer novas culturas.
+                                </div>
+                            </div>
+                        </div>
+                        <div x-data="{ id: $id('accordion') }" class="cursor-pointer group">
+                            <button @click="setActiveAccordion(id)"
+                                class="flex items-center justify-between w-full p-4 text-left select-none group-hover:underline">
+                                <strong>A escola oferece aulas de inglês para crianças?</strong>
+                                <svg class="w-4 h-4 duration-200 ease-out"
+                                    :class="{ 'rotate-180': activeAccordion==id }" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion==id" x-collapse x-cloak>
+                                <div class="p-4 pt-0 opacity-70">
+                                    Sim, oferecemos aulas de inglês específicas para crianças. Nossos cursos são
+                                    projetados
+                                    para tornar o aprendizado divertido e interativo, utilizando métodos adaptados à
+                                    faixa
+                                    etária e ao nível de proficiência dos alunos.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="feedback" class="flex items-center justify-center pb-20 pt-10 bg-white min-w-screen">
+            <div class="px-16 bg-white">
+                <div class="container flex flex-col items-start mx-auto lg:items-center">
+                    <p
+                        class="relative flex items-start justify-start w-full text-lg font-bold tracking-widest text-blue-600 uppercase lg:justify-center lg:items-center">
+                        Não se baseie apenas na nossa palavra</p>
+                    <h4
+                        class="relative flex items-start justify-start w-full max-w-3xl text-5xl font-bold lg:justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="absolute right-0 hidden w-12 h-12 -mt-2 -mr-16 text-gray-200 lg:inline-block"
+                            viewBox="0 0 975.036 975.036">
+                            <path
+                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                            </path>
+                        </svg>
+                        Feedback de nossos alunos
+                    </h4>
+                    <div class="block w-full h-0.5 max-w-lg mt-6 bg-purple-100 rounded-full">
+                    </div>
+
+                    <div class="items-center justify-center w-full mt-12 mb-4 lg:flex">
+                        <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/3 lg:mb-0">
+                            <div class="flex items-center justify-center">
+                                <div class="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
+                                    <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1700&q=80"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <div class="flex flex-col items-start justify-center">
+                                    <h4 class="font-bold text-gray-800">Carlos T.</h4>
+                                    <p class="text-gray-600">Iniciante</p>
+                                </div>
+                            </div>
+                            <blockquote class="mt-8 text-lg text-gray-500">"As aulas são dinâmicas e divertidas, e estou
+                                aprendendo muito mais rápido do que esperava."
+                            </blockquote>
+                        </div>
+                        <div
+                            class="flex flex-col items-start justify-start w-full h-auto px-0 mx-0 mb-12 border-l border-r border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:mx-8 lg:border-gray-200">
+                            <div class="flex items-center justify-center">
+                                <div class="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
+                                    <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2547&q=80"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <div class="flex flex-col items-start justify-center">
+                                    <h4 class="font-bold text-gray-800">Maria S.</h4>
+                                    <p class="text-gray-600">Intermediário</p>
+                                </div>
+                            </div>
+                            <blockquote class="mt-8 text-lg text-gray-500">"Os professores são super atenciosos e o
+                                método de ensino é muito eficaz. Recomendo a
+                                todos!"</blockquote>
+                        </div>
+                        <div class="flex flex-col items-start justify-start w-full h-auto lg:w-1/3">
+                            <div class="flex items-center justify-center">
+                                <div class="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
+                                    <img src="https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1256&q=80"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <div class="flex flex-col items-start justify-center">
+                                    <h4 class="font-bold text-gray-800">Júlio P</h4>
+                                    <p class="text-gray-600">Avançado</p>
+                                </div>
+                            </div>
+                            <blockquote class="mt-8 text-lg text-gray-500">"Estou me sentindo confiante para falar
+                                inglês agora."</blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="flex items-center justify-center flex-col">
+                <p class="text-lg font-bold tracking-widest text-blue-600 uppercase">
+                    Como chegar na</p>
+                <h4 class="text-5xl font-bold">
+                    Uce Idiomas
+                </h4>
+            </div>
+            <div class="w-full mt-10">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15555.888151862544!2d-38.3511327!3d-12.9095187!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71616517481646b%3A0x27ce59d7d323f17d!2sUCE%20Idioma!5e0!3m2!1spt-BR!2sbr!4v1729048142859!5m2!1spt-BR!2sbr"
+                    height="500" allowfullscreen="" loading="lazy" class="m-auto w-3/4"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="block m-auto h-0.5 max-w-lg mt-20 bg-purple-100 rounded-full">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="max-w-screen-xl px-4 pb-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+            <div class="flex justify-center mt-8 space-x-6">
+                <a href="https://wa.me/5571993150288" target="_blank" class="text-gray-400 hover:opacity-60">
+                    <span class="sr-only">Whatsapp</span>
+                    <svg class="w-10 h-10 hover:-translate-y-1 duration-300 hover:scale-110 hover:opacity-60 transition ease-in-out delay-1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/uceidioma/reels" target="_blank" class="hover:opacity-60">
+                    <span class="sr-only">Instagram</span>
+                    <svg class="w-10 h-10 hover:-translate-y-1 duration-300 hover:scale-110 hover:opacity-60 transition ease-in-out delay-1"
+                        aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+            <div id="contact" class="flex justify-center flex-col items-center gap-y-3 text-gray-600">
+                <span>
+                    (71) 99315-0288 - contato@uceidiomas.com
+                </span>
+                <span>
+                    28.655.141/0001-61
+                </span>
+                <span>
+                    BA-526, 305 - São Cristóvão, Salvador - BA, 41510-000
+                </span>
+            </div>
+            <p class="mt-8 text-base leading-6 text-center text-gray-600">
+                &copy; 2024 UCE Idiomas. Todos direitos reservados
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
