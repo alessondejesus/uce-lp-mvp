@@ -25,18 +25,17 @@
         <div class="w-full flex">
             <div class="h-full w-3/5">
                 <div class="h-20 w-full flex items-center">
-                    <div class="w-2/5 pl-20 pt-2">
+                    <div class="sm:w-2/5 pl-5 sm:pl-20 pt-2">
                         <img class="size-20" src="assets/images/uce_idiomas_logo.jpg" alt="Logo UCE Idiomas">
                     </div>
-                    <div class="text-blue-800 font-bold pl-10 md:pl-0">
-                        <a class="underline underline-offset-8 decoration-transparent transition-all duration-300 hover:decoration-blue-500"
+                    <div class="text-blue-800 font-bold pl-10 md:pl-0 pr-5 md:pr-0">
+                        <a class="text-xs sm:text-base underline-offset-8 decoration-transparent transition-all duration-300 hover:decoration-blue-500 whitespace-nowrap"
                             href="https://wa.me/5571993150288" target="_blank">(71) 99315-0288</a>
                     </div>
                 </div>
             </div>
             <div class="bg-blue-600 w-2/5">
                 <div class="lg:h-20 w-full flex items-center pr-10 flex-col sm:space-y-1 sm:pt-5">
-                    <!-- Botão do hamburguer para telas pequenas -->
                     <button class="lg:hidden absolute right-2 p-2 focus:outline-none" id="menu-button">
                         <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -45,9 +44,6 @@
                         </svg>
                     </button>
 
-                    <!-- Menu de navegação (escondido por padrão em telas pequenas) -->
-
-                    <!-- transform scale-y-0 origin-top transition-all duration-300 ease-in-out -->
                     <div class="ml-20 gap-2 lg:gap-0 py-2 lg:py-0 w-full flex flex-col lg:flex-row hidden lg:flex lg:px-20 justify-between text-white transform scale-y-0 lg:scale-y-100 origin-top transition-all duration-300 ease-in-out"
                         id="menu">
                         <a href="#"
@@ -79,7 +75,7 @@
         <div class="h-full flex">
             <div class="w-ful lg:w-3/5 flex justify-center pt-36 pb-10">
                 <div class="w-4/5 lg:w-2/4">
-                    <h1 class="text-9xl text-left font-bold">
+                    <h1 class="text-8xl sm:text-9xl text-left font-bold">
                         Inglês sem limites
                     </h1>
                     <h5 class="text-xl mt-5 text-gray-600 font-semibold">
@@ -125,7 +121,7 @@
                     </div>
                     <div class="w-full max-lg:max-w-lg">
                         <form class="flex items-center">
-                            <input type="email" placeholder="Digite seu email e receba novidades" name="email"
+                            <input type="email" placeholder="Digite seu email" name="email"
                                 autocomplete="email"
                                 class="w-full lg:w-[300px] text-gray-800 bg-white py-3.5 px-4 text-base border border-[#ddd] border-r-0 rounded-l-lg outline-none focus:border-blue-200"
                                 required />
@@ -143,8 +139,8 @@
             </div>
         </section>
         <section>
-            <div class="w-full flex items-center justify-center pt-16 lg:pt-0">
-                <div class="block w-full h-0.5 max-w-lg bg-purple-100 rounded-full mb-16">
+            <div class="w-full flex items-center justify-center pt-24 sm:pt-0">
+                <div class="block w-2/3 h-0.5 max-w-lg bg-purple-100 rounded-full mb-16">
                 </div>
             </div>
             <div class="w-full h-96 relative px-20 flex items-center justify-center">
@@ -159,7 +155,7 @@
                         </h6>
                         <div class="block w-1/3 h-0.5 mt-10 bg-purple-100 rounded-full">
                         </div>
-                        <ul class="list-disc mt-4 text-xl font-semibold space-y-3">
+                        <ul class="list-disc mt-4 text-base sm:text-xl font-semibold space-y-3 ">
                             <li>São Cristóvão, Salvador - Salvador Norte Shopping</li>
                             <li>(71) 99315-0288</li>
                             <li>contato@uceidiomas.com</li>
@@ -188,7 +184,7 @@
                 <i class="absolute right-20 bottom-2 fa-solid text-6xl fa-square text-red-500 opacity-30"></i>
                 <i class="absolute top-2/4 left-10 fa-solid text-4xl fa-star text-red-500 opacity-30"></i>
                 <i class="absolute top-1/4 left-28 fa-solid text-3xl fa-star text-red-500 opacity-30"></i>
-                <div class="flex items-center justify-center flex-col">
+                <div class="flex items-start sm:items-center justify-center flex-col">
                     <p
                         class="flex items-start justify-start text-lg font-bold tracking-widest text-blue-600 uppercase lg:justify-center lg:items-center">
                         Dúvidas?</p>
@@ -411,7 +407,7 @@
                     height="500" allowfullscreen="" loading="lazy" class="m-auto w-3/4"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="block m-auto h-0.5 max-w-lg mt-20 bg-purple-100 rounded-full">
+            <div class="block m-auto h-0.5 w-2/3 max-w-lg mt-20 bg-purple-100 rounded-full">
             </div>
         </section>
     </main>
@@ -480,7 +476,6 @@
             menuButton.classList.add('hidden')
 
         });
-
 
         window.chatwootSettings = { "position": "right", "type": "standard", "launcherTitle": "Fale conosco no chat" };
         (function (d, t) {
