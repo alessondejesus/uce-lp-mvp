@@ -27,15 +27,28 @@
                     <div class="w-2/5 pl-20 pt-2">
                         <img class="size-20" src="assets/images/uce_idiomas_logo.jpg" alt="Logo UCE Idiomas">
                     </div>
-                    <div class="text-blue-800 font-bold">
+                    <div class="text-blue-800 font-bold pl-10 md:pl-0">
                         <a class="underline underline-offset-8 decoration-transparent transition-all duration-300 hover:decoration-blue-500"
                             href="https://wa.me/5571993150288" target="_blank">(71) 99315-0288</a>
                     </div>
                 </div>
             </div>
-            <div class="h-full bg-blue-600 w-2/5">
-                <div class="h-20 w-full flex items-center pr-10">
-                    <div class="ml-20 w-full hidden md:flex justify-between text-white">
+            <div class="bg-blue-600 w-2/5">
+                <div class="lg:h-20 w-full flex items-center pr-10 flex-col sm:space-y-1 sm:pt-5">
+                    <!-- Botão do hamburguer para telas pequenas -->
+                    <button class="lg:hidden absolute right-2 p-2 focus:outline-none" id="menu-button">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Menu de navegação (escondido por padrão em telas pequenas) -->
+
+                    <!-- transform scale-y-0 origin-top transition-all duration-300 ease-in-out -->
+                    <div class="ml-20 gap-2 lg:gap-0 py-2 lg:py-0 w-full flex flex-col lg:flex-row hidden lg:flex lg:px-20 justify-between text-white transform scale-y-0 lg:scale-y-100 origin-top transition-all duration-300 ease-in-out"
+                        id="menu">
                         <a href="#"
                             class="underline underline-offset-8 decoration-transparent transition-all duration-300 hover:decoration-white">
                             Sobre
@@ -79,7 +92,7 @@
                 </div>
             </div>
             <div class="lg:w-2/5 bg-blue-600 hidden lg:flex flex-col justify-end pr-24 items-end">
-                <img class="hidden size-30 xl:block xl:absolute w-2/4 2xl:w-1/4 mr-10"
+                <img class="hidden size-30 xl:block xl:absolute w-2/4 max-w-3xl mr-10"
                     src="assets/images/student-nav-image.png" alt="Logo UCE Idiomas">
                 <i class="absolute ml-1/4 mr-20 top-1/2 fa-solid text-xl fa-circle text-white opacity-40"></i>
                 <i class="absolute right-24 top-44 fa-solid text-5xl fa-square text-white opacity-40"></i>
@@ -159,13 +172,14 @@
                     </div>
                 </div>
                 <div
-                    class="absolute w-3/4 lg:w-1/2 h-full bg-blue-600 ml-60 mt-24 rounded-md shadow-2xl flex items-end justify-center">
+                    class="absolute w-3/4 lg:w-1/2 h-full bg-blue-600 ml-20 md:ml-60 mt-24 rounded-md shadow-2xl flex items-end justify-center">
                 </div>
             </div>
         </section>
         <section>
-            <div id="faq" class="py-20 mt-20 px-20 w-full relative pb-48">
-                <img src="/assets/images/student-illustration-1.jpg" class="absolute w-60 top-0 right-0 opacity-60">
+            <div id="faq" class="py-20 mt-20 px-5 lg:px-20 w-full relative pb-48">
+                <img src="/assets/images/student-illustration-1.jpg"
+                    class="hidden lg:absolute w-60 top-0 right-0 opacity-60">
                 <img src="/assets/images/student-illustration-2.jpg" class="absolute w-60 bottom-0 left-1 opacity-60">
                 <i class="absolute left-20 fa-solid text-5xl fa-circle text-red-500 opacity-30"></i>
                 <i class="absolute left-1/4 top-2 fa-solid text-5xl fa-star text-red-500 opacity-30"></i>
@@ -437,6 +451,37 @@
             </p>
         </div>
     </footer>
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const menu = document.getElementById('menu');
+
+        menuButton.addEventListener('click', () => {
+            menu.classList.remove('hidden');
+            setTimeout(() => {
+                menu.classList.remove('scale-y-0');
+            }, 10);
+            menuButton.classList.add('hidden')
+
+        });
+
+
+        window.chatwootSettings = { "position": "right", "type": "standard", "launcherTitle": "Fale conosco no chat" };
+        (function (d, t) {
+            var BASE_URL = "https://chatwoot.alesson.dev";
+            var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            g.src = BASE_URL + "/packs/js/sdk.js";
+            g.defer = true;
+            g.async = true;
+            s.parentNode.insertBefore(g, s);
+            g.onload = function () {
+                window.chatwootSDK.run({
+                    websiteToken: '9CqXUwf65QiqkXj4HL1EJmBA',
+                    baseUrl: BASE_URL
+                })
+            }
+        })(document, "script");
+
+    </script>
 </body>
 
 </html>
